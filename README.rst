@@ -1,5 +1,5 @@
-Adelenine
-=========
+Adeleine
+========
 
 An image chat server.
 
