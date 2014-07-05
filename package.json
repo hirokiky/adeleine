@@ -1,0 +1,21 @@
+{
+  "name": "adeleine",
+  "version": "0.0.0",
+  "description": "An image chat server",
+  "dependencies": {
+    "jsonschema": "~0.4.0",
+    "ws": "~0.4.31"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node adeleine/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hirokiky/adeleine/"
+  },
+  "author": "Hiroki KIYOHARA",
+  "license": "MIT",
+  "readmeFilename": "README.rst"
+}
