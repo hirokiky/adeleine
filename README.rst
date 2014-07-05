@@ -22,7 +22,7 @@ Trying
     < {"imageUrl": "http://image.example.com/prettycat.jpg"}
     < Image stored
     >
-    ... wait a moment, random image url will broadcast.
+    ... wait a moment, the server will broadcast random image.
     < {"imageUrl": "http://image.example.com/prettycat.jpg"}
     >
 
