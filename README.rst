@@ -20,5 +20,9 @@ Trying
     connected (press CTRL+C to quit)
     > {"imageUrl": "http://image.example.com/prettycat.jpg"}
     < {"imageUrl": "http://image.example.com/prettycat.jpg"}
+    < Image stored
+    >
+    ... wait a moment, random image url will broadcast.
+    < {"imageUrl": "http://image.example.com/prettycat.jpg"}
     >
 

@@ -1,4 +1,7 @@
 /* TODO: Need more validation*/
+/**
+ * A schema for client messagess.
+ */
 var messageSchema = {
     "type": "object",
     "properties": {
