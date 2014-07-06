@@ -25,7 +25,7 @@ function get_random_image_url(callback) {
         if (err) {
             return callback(err, null);
         }
-        if (ret.length == 0) {
+        if (ret.length === 0) {
             return callback(null, null);
         }
 
