@@ -19,7 +19,7 @@ server.broadcast = function(data) {
 server.send_random_image_url = function() {
     imagestore.get_random_image_url(function(err, ret) {
         if (!err && ret) {
-            server.broadcast(JSON.stringify({imageUrl: ret}));
+            server.broadcast(JSON.stringify({imageUrl: ret, client: "Server"}));
         }
     });
 };
@@ -39,12 +39,12 @@ server.on('connection', function(socket) {
             socket.send("Invalid message");
             return;
         }
-
         imagestore.store_image_url(message.imageUrl, function() {
             socket.send("Image stored");
         });
 
-        server.broadcast(data);
+        message.client = socket.upgradeReq.connection.remoteAddress;
+        server.broadcast(JSON.stringify(message));
     });
 
     setInterval(server.send_random_image_url, 60 * 1000);

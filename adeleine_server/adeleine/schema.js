@@ -1,11 +1,12 @@
-/* TODO: Need more validation*/
 /**
  * A schema for client messagess.
  */
+/* TODO: Need more validation*/
 var messageSchema = {
     "type": "object",
     "properties": {
-        "imageUrl": {"type": "string", "required": true}
+        "imageUrl": {"type": "string", "required": true},
+        "client": {"type": "string", "required": false}
     }
 };
 
