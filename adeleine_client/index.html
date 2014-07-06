@@ -1,8 +1,15 @@
 <html>
 <body>
-<ul data-bind="foreach: messages">
+<ul data-bind="foreach: images">
   <li><span data-bind="text: client"></span>: <img data-bind="attr: {src: imageUrl}" /></li>
 </ul>
+<ul data-bind="foreach: notices">
+  <li data-bind="text: message"></li>
+</ul>
+<form data-bind="submit: post_image">
+  <input data-bind="value: image_url, valueUpdate: ['afterkeydown','propertychange','input']" />
+  <input type="submit" value="Submit" />
+</form>
 <script src="static/js/lib/knockout-3.1.0.min.js"></script>
 <script src="static/js/queue.js"></script>
 <script src="static/js/adeleine.js"></script>
