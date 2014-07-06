@@ -1,7 +1,7 @@
 <html>
 <body>
 <ul data-bind="foreach: messages">
-  <li><span data-bind="text: client"></span>: <span data-bind="text: imageUrl"></span></li>
+  <li><span data-bind="text: client"></span>: <img data-bind="attr: {src: imageUrl}" /></li>
 </ul>
 <script src="static/js/lib/knockout-3.1.0.min.js"></script>
 <script src="static/js/queue.js"></script>
