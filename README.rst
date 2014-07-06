@@ -3,17 +3,21 @@ Adeleine
 
 An image chat server.
 
-Run
-===
-
+Run Chat Server
+===============
 ::
 
+    cd adeleine_server
     npm install
     npm start
 
-Trying
-======
+Distribute the HTML
+===================
 
+Distribute `adeleine/adeleine_client` by using nginx or something.
+
+Chatting locally
+================
 ::
 
     wscat -c ws://127.0.0.1:8888/
